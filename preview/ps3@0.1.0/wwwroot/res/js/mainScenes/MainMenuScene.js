@@ -27,6 +27,8 @@ export default class MainMenuScene extends MainScene {
             }
         });
 
+        this.cutscene_showSkipButton();
+
         let orakioVersusLayaImg = cloneImage(PreloadedAssets.cutscenes_orakioVersusLaya);
         this.container.appendChild(orakioVersusLayaImg);
         orakioVersusLayaImg.style.opacity = '0';
@@ -104,6 +106,7 @@ export default class MainMenuScene extends MainScene {
         this.container.innerHTML = '';
         window.removeEventListener('keyup', this.cutscene_skipListener);
         this.cutscene_skipListener = null;
+        this.cutscene_hideSkipButton();
 
         this.afterCutscene_show();
     }

@@ -31,6 +31,8 @@ export default class GameplayScene extends MainScene {
             }
         });
 
+        this.cutscene_showSkipButton();
+
         /*
         this.cutscene_nextPart(() => {
             this.cutscene_clearPart();
@@ -142,6 +144,7 @@ export default class GameplayScene extends MainScene {
         this.container.innerHTML = '';
         window.removeEventListener('keyup', this.cutscene_skipListener);
         this.cutscene_skipListener = null;
+        this.cutscene_hideSkipButton();
     }
 
     destroy() {

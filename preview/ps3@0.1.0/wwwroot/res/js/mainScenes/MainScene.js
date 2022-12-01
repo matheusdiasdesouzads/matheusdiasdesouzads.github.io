@@ -1,4 +1,5 @@
 import ProjectSettings from '../ProjectSettings.js';
+import {mobileAndTabletCheck} from '../util/DeviceHelpers.js';
 
 export default class MainScene {
     constructor() {
@@ -9,6 +10,7 @@ export default class MainScene {
         this.cutscene_skipListener = null;
         this.cutscene_timeoutFunction = null;
         this.cutscene_timeoutId = -1;
+        this.cutscene_skipButton = null;
     }
 
     initialize() {
@@ -26,6 +28,26 @@ export default class MainScene {
     }
 
     tick() {
+    }
+
+    cutscene_showSkipButton() {
+        if (this.cutscene_skipButton != null || /*!mobileAndTabletCheck()*/ false) {
+            return;
+        }
+        this.cutscene_skipButton = $('<div style="position: absolute; padding: 12px 15px; right: 10px; top: 10px; background: #fff; border-radius: 100px; color: #000; font-weight: bold">&gt;</div>').get(0);
+        this.cutscene_skipButton.addEventListener('click', () => {
+            window.dispatchEvent(new KeyboardEvent('keyup', {
+                keyCode: 88,
+            }));
+        });
+        document.body.appendChild(this.cutscene_skipButton);
+    }
+
+    cutscene_hideSkipButton() {
+        if (this.cutscene_skipButton != null) {
+            this.cutscene_skipButton.remove();
+            this.cutscene_skipButton = null;
+        }
     }
 
     cutscene_clearPart() {
