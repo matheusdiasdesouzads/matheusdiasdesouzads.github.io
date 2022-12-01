@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Verdana";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fon/verdana/verdana.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Verdana";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fon/verdana/verdanab.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Verdana";
+    font-style: italic;
+    font-weight: normal;
+    src: url("../fon/verdana/verdanai.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Verdana";
+    font-style: italic;
+    font-weight: bold;
+    src: url("../fon/verdana/verdanaz.ttf") format("truetype");
+}
+
+html[outer-space=true], body[outer-space=true] {
+    background: #000;
+}
+
+html, body {
+    background: #555;
+    color: #fff;
+    font-family: "Verdana";
+    font-size: 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: default;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#gameContainer {
+    overflow: hidden;
+}
+
+.textarea {
+    border: 5px solid #73B3C9;
+    background: #245662;
+    padding: 15px;
+}
+
+.message-dialog {
+    border: 5px solid #333;
+    border-radius: 15px;
+    background: #ddd;
+    color: #000;
+    padding: 15px;
+    word-break: normal;
+}
+
+.btn {
+    background: #4C5560;
+    color: #fff;
+    font-family: "Verdana";
+    font-size: 18px;
+    border: 5px solid #4C5560;
+    border-radius: 0;
+    outline: 0;
+}
+
+.btn-primary {
+    background: #3b6877;
+    border: 5px solid #477b8d;
+}
+
+.btn:hover, .btn:focus {
+    border: 5px solid #73B3C9;
+    color: #fff;
+    background: #395B83;
+    border-radius: 0;
+    outline: 0;
+}
