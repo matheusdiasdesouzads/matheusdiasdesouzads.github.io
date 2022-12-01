@@ -1,31 +1,3 @@
-@font-face {
-    font-family: "Verdana";
-    font-style: normal;
-    font-weight: normal;
-    src: url("../fon/verdana/verdana.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Verdana";
-    font-style: normal;
-    font-weight: bold;
-    src: url("../fon/verdana/verdanab.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Verdana";
-    font-style: italic;
-    font-weight: normal;
-    src: url("../fon/verdana/verdanai.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Verdana";
-    font-style: italic;
-    font-weight: bold;
-    src: url("../fon/verdana/verdanaz.ttf") format("truetype");
-}
-
 html[outer-space=true], body[outer-space=true] {
     background: #000;
 }
