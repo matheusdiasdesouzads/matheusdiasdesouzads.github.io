@@ -1,6 +1,6 @@
 import MainScene from './MainScene.js';
-import MainMenuScene from './MainMenuScene.js';
-import GameplayScene from './GameplayScene.js';
+import MainMenuScene from './mainMenu/MainMenuScene.js';
+import GameplayScene from './gameplay/GameplayScene.js';
 import ProjectSettings from '../ProjectSettings.js';
 import PreloadedAssets from '../PreloadedAssets.js';
 

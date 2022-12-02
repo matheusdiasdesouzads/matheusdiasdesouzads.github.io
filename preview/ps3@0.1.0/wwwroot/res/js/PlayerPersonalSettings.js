@@ -1,11 +1,12 @@
 const PlayerPersonalSettings = {
     keyboardSettings: {
-        left: [37, 65],
-        right: [39, 68],
-        up: [38, 87],
-        down: [40, 83],
-        attackOrOK: [90, 74],
-        cancelOrSkip: [88, 75],
+        left: ['LEFT', 'ARROWLEFT', 'A'],
+        right: ['RIGHT', 'ARROWRIGHT', 'D'],
+        up: ['UP', 'ARROWUP', 'W'],
+        down: ['DOWN', 'ARROWDOWN', 'S'],
+        okOrTalk: ['Z', 'J'],
+        cancelOrSkip: ['X', 'K'],
+        openMenu: ['ESC', 'ESCAPE'],
     },
 };
 

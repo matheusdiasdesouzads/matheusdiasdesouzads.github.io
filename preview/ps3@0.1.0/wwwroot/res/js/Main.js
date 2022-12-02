@@ -1,4 +1,5 @@
 import ProjectSettings from './ProjectSettings.js';
+import PlayerPersonalSettings from './PlayerPersonalSettings.js';
 import Preloader from './mainScenes/Preloader.js';
 
 class Main {
@@ -14,6 +15,11 @@ class Main {
         });
         window.addEventListener('orientationchange', evt => {
             this.resizeWindow();
+        });
+        window.addEventListener('keyup', e => {
+            if (PlayerPersonalSettings.keyboardSettings.okOrTalk.indexOf(e.key.toUpperCase()) != -1) {
+                document.activeElement.click();
+            }
         });
         new Preloader;
     }
