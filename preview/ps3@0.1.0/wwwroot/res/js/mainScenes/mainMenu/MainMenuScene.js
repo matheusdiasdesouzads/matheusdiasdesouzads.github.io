@@ -53,6 +53,7 @@ export default class MainMenuScene extends MainScene {
         this.m_mainTextArea.style.top = `${ProjectSettings.centerY(500) + 200}px`;
         this.m_mainTextArea.innerHTML = `
             <button class="btn" id="startGameBtn" style="text-align: left">Start Game</button>
+            <button class="btn" id="repeatIntroBtn" style="text-align: left">Repeat Introduction</button>
             <button class="btn" id="exitGameBtn" style="text-align: left">Exit Game</button>
         `;
         window.addEventListener('keyup', this.m_keyPressListener = e => {
@@ -73,6 +74,10 @@ export default class MainMenuScene extends MainScene {
             this.mainTextArea_hide();
             this.startGameTextArea_show();
         });
+        document.getElementById('repeatIntroBtn').addEventListener('click', () => {
+            this.destroy();
+            new MainMenuScene(this.m_gameplaySceneClass);
+        });
         document.getElementById('exitGameBtn').addEventListener('click', () => {
             window.close();
         });
@@ -80,6 +85,9 @@ export default class MainMenuScene extends MainScene {
     }
 
     mainTextArea_hide() {
+        if (this.m_mainTextArea == null) {
+            return;
+        }
         this.m_mainTextArea.remove();
         this.m_mainTextArea = null;
 
@@ -143,6 +151,9 @@ export default class MainMenuScene extends MainScene {
     }
 
     startGameTextArea_hide() {
+        if (this.m_startGameTextArea == null) {
+            return;
+        }
         this.m_startGameTextArea.remove();
         this.m_startGameTextArea = null;
 
@@ -152,5 +163,7 @@ export default class MainMenuScene extends MainScene {
 
     destroy() {
         super.destroy();
+        this.startGameTextArea_hide();
+        this.mainTextArea_hide();
     }
 }

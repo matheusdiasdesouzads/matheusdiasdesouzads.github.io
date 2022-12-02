@@ -125,7 +125,7 @@ export default class MainScene {
             }
             let s = split.shift();
             this.messageDialogElement.innerText += s == ' ' ? ' ' + split.shift() : s;
-        }, 15);
+        }, 30);
     }
 
     hideMessageDialog() {
