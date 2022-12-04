@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Phantasy Star III</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <meta name="theme-color" content="#555" />
+    <meta
+      name="description"
+      content="Phantasy Star III Remake"
+    />
+    <script rel="preload" src="res/fonts/verdana/verdana.ttf" as="font" type="font/ttf" crossorigin></script>
+    <script rel="preload" src="res/fonts/verdana/verdanab.ttf" as="font" type="font/ttf" crossorigin></script>
+    <script rel="preload" src="res/fonts/verdana/verdanai.ttf" as="font" type="font/ttf" crossorigin></script>
+    <script rel="preload" src="res/fonts/verdana/verdanaz.ttf" as="font" type="font/ttf" crossorigin></script>
+    <link rel="stylesheet" href="res/css/build/Main.css">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="gameContainer" style="position: absolute">
+      <div id="backgroundContainer"></div>
+      <div id="overworldContainer"></div>
+      <div id="battleContainer"></div>
+      <div id="messageDialogContainer"></div>
+      <div id="uiContainer"></div>
+    </div>
+    <div style="position: absolute; right: 10px; top: 10px; display: flex; flex-direction: row; gap: 3px">
+      <div id="skipMessageBtn" style="display: none; padding: 12px 15px; background: #fff; color: #000; border-radius: 100px; font-weight: bold;">&gt;</div>
+      <div id="skipCutsceneBtn" style="display: none; padding: 12px 15px; background: #fff; color: #000; border-radius: 100px; font-weight: bold;">»</div>
+    </div>
+    <script src="res/js/createjs/preloadjs.min.js"></script>
+    <script src="res/js/createjs/soundjs.min.js"></script>
+    <script src="res/js/build/Main.js"></script>
+  </body>
+</html>

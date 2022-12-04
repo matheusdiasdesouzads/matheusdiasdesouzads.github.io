@@ -1,0 +1,74 @@
+html, body {
+  transition: background-color .5s;
+}
+
+html[outer-space="true"], body[outer-space="true"] {
+  background: #000;
+}
+
+html, body {
+  color: #fff;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+  width: 100%;
+  height: 100%;
+  background: #555;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+  font-size: 18px;
+}
+
+#gameContainer {
+  overflow: hidden;
+}
+
+.textarea {
+  background: #245662;
+  border: 5px solid #73b3c9;
+  padding: 15px;
+}
+
+.message-dialog {
+  color: #000;
+  word-break: normal;
+  background: #ddd;
+  border: 5px solid #333;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.btn {
+  color: #fff;
+  background: #4c5560;
+  border: 5px solid #4c5560;
+  border-radius: 0;
+  outline: 0;
+  padding: 10px;
+  font-family: Verdana;
+  font-size: 18px;
+}
+
+.btn-primary {
+  background: #3b6877;
+  border: 5px solid #477b8d;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #5e738b;
+  border: 5px solid #647e9c;
+  border-radius: 0;
+  outline: 0;
+}
+
+.btn:focus {
+  color: #fff;
+  background: #395b83;
+  border: 5px solid #73b3c9;
+  border-radius: 0;
+  outline: 0;
+}
+
+/*# sourceMappingURL=Main.css.map */
