@@ -24,6 +24,24 @@ html, body {
   overflow: hidden;
 }
 
+.scrollable-inc::-webkit-scrollbar, .textarea::-webkit-scrollbar, .scrollable::-webkit-scrollbar {
+  width: .3em;
+  height: .3em;
+}
+
+.scrollable-inc::-webkit-scrollbar-thumb, .textarea::-webkit-scrollbar-thumb, .scrollable::-webkit-scrollbar-thumb {
+  background: #bbb;
+}
+
+.scrollable-inc::-webkit-scrollbar-track, .textarea::-webkit-scrollbar-track, .scrollable::-webkit-scrollbar-track {
+  background: #245662;
+}
+
+.scrollable-inc, .textarea, .scrollable {
+  scrollbar-face-color: #bbb;
+  scrollbar-track-color: #245662;
+}
+
 .textarea {
   background: #245662;
   border: 5px solid #73b3c9;
