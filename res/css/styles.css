@@ -13,3 +13,27 @@ a {
 	text-decoration: none;
 	color: #aaf;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Segoe Ui';
+}
+
+h1, h2 {
+	font-weight: lighter;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4, h5, h6 {
+	font-size: 18px;
+}
